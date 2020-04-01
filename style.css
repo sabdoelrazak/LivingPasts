@@ -1,0 +1,64 @@
+/* Keep in mind that your life as a web developer sometimes gets very frustrating
+because whatever you change in here just doesn't seem to change anything */
+
+
+/* This is probably your browser caching old CSS files,
+so try to do a forced refresh and a cache clear (right click the refresh icon while you have your Chrome dev tools open,
+and you should see the option */
+
+.social-icons {
+    /* Make the social icons a little bigger */
+    font-size: 20px;
+}
+
+.social-icon-link {
+    /* By default the social icons are red */
+    color: red;
+}
+
+.social-icon-link:hover {
+    /* When hovering over a social icon, make it a darker shade of red */
+    color: darkred;
+    /* When hovering, remove the ugly little line below the icon */
+    text-decoration: none !important;
+}
+
+main.container {
+    /* Here a little space at the top of the page is added, so the main content is not hidden behind the navbar */
+    padding-top: 90px;
+}
+
+
+/* The footer at the bottom is a copy paste from here: https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/ */
+
+
+/* Steal whatever you can! */
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+    /* Don't worry about this */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Here they add a little room at the bottom for the footer, so the rest of the page gets moved up by 60px */
+    margin-bottom: 60px;
+}
+
+.footer {
+    /* This makes sure that the footer is always at the bottom of the screen */
+    position: absolute;
+    bottom: 0;
+    /* Make the footer the entire width of the screen */
+    width: 100%;
+    /* Make the footer 60px high */
+    height: 60px;
+    /* Don't worry too much about this one, it's copy paste anyways (it's for vertically centering the text) */
+    line-height: 60px;
+    /* Set the footer's color */
+    background-color: #f5f5f5;
+}
