@@ -6,10 +6,11 @@
 
     <!-- Load "Font Awesome", which is a great place to get free icons, like the magnifying glass: https://fontawesome.com/icons/search?style=solid -->
     <!-- We'll use this for the social icons (FB, insta, etc) as well -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> -->
+   
+    <link href="/css/all.css" rel="stylesheet">
     <!-- Load our own custom css file (don't forget to check this out!) -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -40,12 +41,18 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <!-- If you have an HTML file called "recipe-page.html", you refer to it with href="/recipe-page.html" -->
-                        <!-- So if you click on this link, you will go to the other page! -->
-                        <a class="nav-link" href="/recipe-page.html">Individual Recipe Page</a>
+                        <a class="nav-link" href="/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Another Link</a>
+                        <!-- If you have an HTML file called "recipe-page.html", you refer to it with href="/recipe-page.html" -->
+                        <!-- So if you click on this link, you will go to the other page! -->
+                        <a class="nav-link" href="/recipe-page.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lifestyle.html">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/time-machine.html">Utrecht Time Machine</a>
                     </li>
                 </ul>
 
@@ -72,11 +79,12 @@
     <!-- Main Content-->
     <main role="main" class="container">
         <!-- This is the row with the logo and the social icons -->
-        <div class="row">
+        <div class="row ">
             <div class="col-3">
                 <!-- The logo will take up the first three columns (of the twelve available) -->
-                <img src="https://via.placeholder.com/100x100" alt="Taste of Time Logo" />
+                <img src="images/logo1.png" alt="Taste of Time Logo" />
             </div>
+
             <div class="col-9 text-right social-icons">
                 <!-- The social icons will take up the rest of the space (remaining 9 columns)-->
                 <!-- However, they will always be displayed to the very right, by using "text-right" -->
@@ -84,7 +92,7 @@
 
                 <!-- I've added a custom class here called "social-icon-link", I use this in our custom css -->
                 <!-- Check out style.css! -->
-                <a href="https://facebook.com" class="social-icon-link" target="_blank">
+                <a href="https://facebook.com" class="social-icon-link" target="_blank" >
                     <!-- Font Awesome icons again :) -->
                     <i class="fab fa-facebook-square"></i>
                 </a>
@@ -117,18 +125,19 @@
                 <img src="https://via.placeholder.com/150x150" alt="Ad" class="img-fluid" />
             </div>
 
-            <div class="col-md-7 mb-3">
+
+            <div class="col-md-7 mb-3" style="border:1px solid black">
                 <!-- Featured recipe takes up the next 7 columns -->
                 <!-- Note that it will ONLY do so on large enough screens (>= medium sized, see e-mail) -->
                 <!-- Otherwise, it will just take up the full screen -->
                 <!-- I've added space at the bottom here using "mb-3", so when on mobile the sections are displayed below eachother there's some room -->
-
-
+                
+                <div class = "col-md-6 mb-3" > 
                 <img src="https://via.placeholder.com/1280x720" alt="Recipe" class="img-fluid" />
-
+                </div>                   
                 <!-- This is an important realization! You can make rows WITHIN columns -->
                 <!-- So, within a column, you can create a new row, in which you can create columns again! -->
-                <div class="row">
+                <div class="col">
                     <div class="col-md-6">
                         <!-- This "Recipes text" takes half of this section -->
                         <em>Recipes</em>
@@ -142,12 +151,13 @@
                         <em>27/03/2020</em>
                     </div>
                 </div>
-
+            
                 <p><strong>Appelflappen in a new way</strong></p>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis ipsum nec velit blandit congue in at nulla. Proin pellentesque tincidunt erat vel rhoncus. Nunc semper diam quis consectetur faucibus.
                 </p>
             </div>
+
             <div class="col-md-3 mb-3">
                 <!-- Sidebar takes up the last 3 columns -->
                 <!-- Note that it will ONLY do so on large enough screens (>= medium sized, see e-mail) -->

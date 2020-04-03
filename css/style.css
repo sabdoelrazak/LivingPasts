@@ -44,6 +44,7 @@ html {
     min-height: 100%;
 }
 
+
 body {
     /* Here they add a little room at the bottom for the footer, so the rest of the page gets moved up by 60px */
     margin-bottom: 60px;
@@ -61,4 +62,9 @@ body {
     line-height: 60px;
     /* Set the footer's color */
     background-color: #f5f5f5;
+}
+
+img {
+    width: 50%;
+    height: auto;
 }
