@@ -6,6 +6,7 @@ because whatever you change in here just doesn't seem to change anything */
 so try to do a forced refresh and a cache clear (right click the refresh icon while you have your Chrome dev tools open,
 and you should see the option */
 
+
 .social-icons {
     /* Make the social icons a little bigger */
     font-size: 20px;
@@ -48,6 +49,9 @@ html {
 body {
     /* Here they add a little room at the bottom for the footer, so the rest of the page gets moved up by 60px */
     margin-bottom: 60px;
+    font-family: bely-display, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .footer {
