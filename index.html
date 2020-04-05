@@ -1,197 +1,224 @@
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Robert Kraamwinkel, Saif Abdoelrazak, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Blog Template · Bootstrap</title>
 
-<head>
-    <!-- Load Bootstrap 4.0 required files (one big CSS file with all sorts of smart things) -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Load "Font Awesome", which is a great place to get free icons, like the magnifying glass: https://fontawesome.com/icons/search?style=solid -->
-    <!-- We'll use this for the social icons (FB, insta, etc) as well -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> -->
-   
-    <link href="/css/all.css" rel="stylesheet">
-    <!-- Load our own custom css file (don't forget to check this out!) -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <!-- This entire navbar I've just copied from https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/ :) -->
-    <!-- No need to do all the work yourself!-->
-    <!-- Don't worry too much about this, it's copy paste anyways! -->
-    <header>
-        <!-- The navbar-light and bg-light here give it the color that it has -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
-            <!-- This is the little Hamburger menu button you get on mobile phones (small screens)-->
-            <!-- The data-target is how it knows where all the navbar links are -->
-            <!-- The data-toggle is how it knows the function of the button (open and collapse, so show/hide all nav links) -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-                <!-- This is the actual Hamburger icon-->
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- This is the main content of the navbar! It's called 'collapse', because it can be 'collapsed' with the hamburger menu -->
-            <!-- If you change the id here, make sure to also update it in the data-target above -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <!-- Perhaps you have seen these things, ul = unordered list -->
-                <!-- Usually presented as a bullet point list, but here they did some CSS magic to put the items horizontally -->
-                <ul class="navbar-nav mr-auto">
-                    <!-- These are all of your actual links, these you will be editing -->
-                    <!-- Adding the "active" class will make it appear "selected" -->
-                    <li class="nav-item active">
-                        <!-- href="#" simply means: Nothing happens when you click. -->
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- If you have an HTML file called "recipe-page.html", you refer to it with href="/recipe-page.html" -->
-                        <!-- So if you click on this link, you will go to the other page! -->
-                        <a class="nav-link" href="/recipe-page.html">Recipes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/lifestyle.html">Lifestyle</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/time-machine.html">Utrecht Time Machine</a>
-                    </li>
-                </ul>
-
-                <!-- This is the little search part at the end -->
-                <!-- Take note of the "mt-2" and "mt-md-0" classes: "mt-2" means "margin top" of level 2. -->
-                <!-- Check out: https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
-                <!-- You can use these little classes to add some space at the top/bottom/right/left of an element -->
-                <!-- For instance, class="mr-1" adds a little space (margin) to the right of an element -->
-                <!-- mt-md-0 means that on medium sized screens we want another margin, see link above! -->
-                <form class="form-inline mt-2 mt-md-0">
-                    <!-- This is the text field, the placeholder is the grey suggestion text in the box (try changing it) -->
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <!-- This is the actual search button, I've added a little FontAwesome icon to it -->
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                        <!-- Try changing this icon by finding another one on https://fontawesome.com/icons -->
-                        <i class="fas fa-search mr-2"></i>
-                        Search
-                    </button>
-                </form>
-            </div>
-        </nav>
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
 
 
-    </header>
-    
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-    <!-- Main Content-->
-    <main role="main" class="container">
-        <!-- This is the row with the logo and the social icons -->
-        <div class="row ">
-            <div class="col-3">
-                <!-- The logo will take up the first three columns (of the twelve available) -->
-                <img src="images/logo1.png" alt="Taste of Time Logo" />
-            </div>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="text-muted" href="#">Subscribe</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="index.html">            
+          <img src="img/logo1.png" alt="logo1" width="100" >
+        </a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="text-muted" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
 
-            <div class="col-9 text-right social-icons">
-                <!-- The social icons will take up the rest of the space (remaining 9 columns)-->
-                <!-- However, they will always be displayed to the very right, by using "text-right" -->
-                <!-- text-right is simply changing the text alignment to be to the right instead of to the left-->
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="#">Home</a>
+      <a class="p-2 text-muted" href="about.html">About</a>
+      <a class="p-2 text-muted" href="recipe-page.html">Recipes</a>
+      <a class="p-2 text-muted" href="lifestyle.html">Lifestyle</a>
+      <a class="p-2 text-muted" href="http://utrechttimemachine.nl">Utrecht Time Machine</a>
+      <!-- <a class="p-2 text-muted" href="#">Business</a>
+      <a class="p-2 text-muted" href="#">Politics</a>
+      <a class="p-2 text-muted" href="#">Opinion</a>
+      <a class="p-2 text-muted" href="#">Science</a>
+      <a class="p-2 text-muted" href="#">Health</a>
+      <a class="p-2 text-muted" href="#">Style</a>
+      <a class="p-2 text-muted" href="#">Travel</a> -->
+    </nav>
+  </div>
 
-                <!-- I've added a custom class here called "social-icon-link", I use this in our custom css -->
-                <!-- Check out style.css! -->
-                <a href="https://facebook.com" class="social-icon-link" target="_blank" >
-                    <!-- Font Awesome icons again :) -->
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-                <a href="https://instagram.com" class="social-icon-link" target="_blank">
-                    <i class="fab fa-instagram-square"></i>
-                </a>
-                <a href="https://youtube.com" class="social-icon-link" target="_blank">
-                    <i class="fab fa-youtube-square"></i>
-                </a>
-            </div>
+  <div class="jumbotron p-4 p-md-5 text-white rounded csPblue">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">New Video: Olipodrigo</h1>
+      <p class="lead my-3">See how we cook a slightly modernized version of </p>
+      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
         </div>
-
-        <!-- Add a horizontal line between the logo and the remaining page content-->
-        <hr>
-
-        <!-- This row contains our ad, featured recipe, and the sidebar -->
-        <div class="row">
-
-            <div class="col-md-2 mb-3">
-                <!-- Ad takes up the first 2 columns -->
-                <!-- Note that it will ONLY do so on large enough screens (>= medium sized, see e-mail) -->
-                <!-- Otherwise, it will just take up the full screen -->
-                <!-- I've added space at the bottom here using "mb-3", so when on mobile the sections are displayed below eachother there's some room -->
-                <p>
-                    <strong>Advertisement</strong>
-                </p>
-
-                <!-- This placeholder site is really useful if you need a quick test image btw -->
-                <!-- "img-fluid" is a way for Bootstrap to try to adjust the image to the size of its container -->
-                <img src="https://via.placeholder.com/150x150" alt="Ad" class="img-fluid" />
-            </div>
-
-
-            <div class="col-md-7 mb-3" style="border:1px solid black">
-                <!-- Featured recipe takes up the next 7 columns -->
-                <!-- Note that it will ONLY do so on large enough screens (>= medium sized, see e-mail) -->
-                <!-- Otherwise, it will just take up the full screen -->
-                <!-- I've added space at the bottom here using "mb-3", so when on mobile the sections are displayed below eachother there's some room -->
-                
-                <div class = "col-md-6 mb-3" > 
-                <img src="https://via.placeholder.com/1280x720" alt="Recipe" class="img-fluid" />
-                </div>                   
-                <!-- This is an important realization! You can make rows WITHIN columns -->
-                <!-- So, within a column, you can create a new row, in which you can create columns again! -->
-                <div class="col">
-                    <div class="col-md-6">
-                        <!-- This "Recipes text" takes half of this section -->
-                        <em>Recipes</em>
-                    </div>
-                    <div class="col-md-6">
-                        <!-- The date takes the other half of this section -->
-                        <!-- On mobile, they might be displayed below eachother -->
-                        <!-- You can also decide to ALWAYS keep them next to eachother by removing the "-md" part, so it becomes "col-6" for both -->
-                        <!-- Then you are saying, I want both of these columns to ALWAYS take up half of the row, no matter the screen size -->
-                        <!-- I've done this for the logo + social row, I will always want to display those next to eachother -->
-                        <em>27/03/2020</em>
-                    </div>
-                </div>
-            
-                <p><strong>Appelflappen in a new way</strong></p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis ipsum nec velit blandit congue in at nulla. Proin pellentesque tincidunt erat vel rhoncus. Nunc semper diam quis consectetur faucibus.
-                </p>
-            </div>
-
-            <div class="col-md-3 mb-3">
-                <!-- Sidebar takes up the last 3 columns -->
-                <!-- Note that it will ONLY do so on large enough screens (>= medium sized, see e-mail) -->
-                <!-- Otherwise, it will just take up the full screen -->
-                <!-- I've added space at the bottom here using "mb-3", so when on mobile the sections are displayed below eachother there's some room -->
-
-                <strong>Sidebar</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <img src="https://via.placeholder.com/350x150" alt="Sidebar Recipe" class="img-fluid" />
-            </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
         </div>
-    </main>
-
-    <!-- Finally, here's the footer. Using some custom css (see style.css) it will always stick to the bottom of the screen -->
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted"> &copy; Taste of Time, 2020</span>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <h3 class="mb-0">Post title</h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
         </div>
-    </footer>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        Tales from the Kitchen ...
+      </h3>
 
-    <!-- (You usually load these scripts at the end of your html inside the body,
-        so the content of your page loads first, and THEN it will load these scripts -->
-    <!-- Load some additional files for Bootstrap -->
-    <!-- You need this for instance for the Hamburger menu to work on mobile -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <div class="blog-post">
+        <h2 class="blog-post-title">Welcome to The Taste of Time!</h2>
+        <p class="blog-post-meta">April 2020 by <a href="about.html"> Team Taste of Time</a></p>
 
-    <!-- Load "Font Awesome", which is a great place to get free icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+        <p>We are team&nbsp;<em>Taste of Time</em>, bringing you historical recipes from Utrecht straight to your modern kitchen!</p>
+        <p>As a project for the Living Pasts course at the Utrecht University, we from the <em>Taste of Time</em> team decided that it is time to delve into the dusty, old cookbooks
+          to discover forgotten traditional Dutch recipes. Our goal is to show how these recipes are still as delicious today as they were back in the day and show YOU how to make them!
+        On our website you will find articles on the ancient Dutch cuisine, 
+        recipes from the olden days, and videos on how to recreate those recipes yourself. Thank you for visiting our website and enjoy our delicious recipes!</p>
+        
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">Another blog post</h2>
+        <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <blockquote>
+          <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </blockquote>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">New feature</h2>
+        <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <ul>
+          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+      </div><!-- /.blog-post -->
+
+      <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+      </nav>
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 csCblue rounded">
+        <h4 class="font-italic">About</h4>
+        <!--  Schrijf about stukje -->
+        <p class="mb-0">ABOUT ZOOI  </p> 
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">Archives</h4>
+        <ol class="list-unstyled mb-0">
+          <li><a href="#">March 2014</a></li>
+          <li><a href="#">February 2014</a></li>
+          <li><a href="#">January 2014</a></li>
+          <li><a href="#">December 2013</a></li>
+          <li><a href="#">November 2013</a></li>
+          <li><a href="#">October 2013</a></li>
+          <li><a href="#">September 2013</a></li>
+          <li><a href="#">August 2013</a></li>
+          <li><a href="#">July 2013</a></li>
+          <li><a href="#">June 2013</a></li>
+          <li><a href="#">May 2013</a></li>
+          <li><a href="#">April 2013</a></li>
+        </ol>
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ol>
+      </div>
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="blog-footer">
+  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
 </body>
-
 </html>

@@ -98,10 +98,30 @@
    
   }
 
-  /* About */
-.meetteam{
+  /* Color Schema */
+
+.csBlack{
+  background-color:  #000000;
+}
+
+.csPblue{
   background-color:  #89B0AE;
 }
+
+.csCblue{
+  background-color:  #BEE3DB;
+}
+.csWhite{
+  background-color:  #ffffff;
+}
+
+.csScarlet{
+  background-color:  #FF1900;
+}
+
+
+
+
 
 
  
