@@ -98,6 +98,45 @@
    
   }
 
+  blockquote {
+    font-style: italic;
+    color: #868e96;
+  }
+
+  .section-heading {
+    font-size: 36px;
+    margin-top: 60px;
+  }
+  
+  header.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+  }
+  
+  header.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #BEE3DB;
+    opacity: 0.5;
+  }
+
+  header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+}
+
+
   /* Color Schema */
 
 .csBlack{
