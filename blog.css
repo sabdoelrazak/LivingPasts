@@ -177,3 +177,11 @@ header.masthead .site-heading .subheading {
   .blog-footer p:last-child {
     margin-bottom: 0;
   }
+
+  /* onze eigen css */
+
+  #top-post{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/olipodrigo.jpg);
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
