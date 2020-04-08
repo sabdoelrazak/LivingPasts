@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Robert Kraamwinkel, Saif Abdoelrazak, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <link rel="icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Change the title of the page! -->
+    <title>Olijpodrigo - the original recipe</title>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Responsive nav bar (requires jquery and bootstrap js plugin) -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top " style="margin-bottom: 10px;">
+
+            <!-- Taste of time logo -->
+            <a href="index.html" class="navbar-brand"><img src="img/logo1.png" alt="logo1" width="100"></a>
+
+            <!-- responsive hamburger menu button  -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- this div determines which part of the nav bar gets replaced by the menu icon when min-width is reached -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapse_target">
+                <!-- the actual list of nav-items -->
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="recipe-page.html" class="nav-link">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="lifestyle.html" class="nav-link">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://utrechttimemachine.nl" class="nav-link">Utrecht Time Machine</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <!-- Insert Image here -->
+        <header class="masthead" style="background-image: url('img/olipodrigo.jpg')">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="post-heading text-white">
+                            <h1>Olijpodrigo - the original</h1>
+                            <p class="subheading">a transcription of the recipe from the Utrecht Archives</p>
+                            <p><span class="meta">Posted by
+                                    <a href="#" style="color:#BEE3DB">Robert Kraamwinkel</a>
+                                    on April 8, 2020</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+
+                        <a href="#">
+                            <img class="img-fluid" src="img/olipodrigo_aanelkaar.jpg" alt="">
+                        </a>
+
+                        <a href="#">
+                            <img class="img-fluid" src="img/olipodrigo_aanelkaar2.jpg" alt="">
+                        </a>
+                        <!-- This is where you caption your images -->
+                        <span class="caption text-muted">This is what the original recipe looks like</span>
+
+                        <h3>Ingredienten:</h3>
+                        <ul>
+                            <li>Een goed hoen<span class="text-success">- een kip</span></li>
+                            <li>Een vet ribbetje schaapenvleesch<span class="text-success">- 3 lamsribbetjes</span></li>
+                            <li>Het achterste van een calfs-bout (dit lijkt me de schenkel)<span class="text-success"> - 2 kalfsschenkels</span></li>
+                            <li>2 a 3 calfsbousjens<span class="text-success"> - 2 a 3 Kalfsballen (??)</span></li>
+                            <li>Een stuck of 2 rundtvleesch<span class="text-success"> - 2 stukken rundersukade</span></li>
+                            <li>Een varckens-crapje<span class="text-success">- varkenskrabbetjes</span></li>
+                            <li>Een of twee varckens ooren en voeten<span class="text-success">- een varkenspoot</span></li>
+                            <li>2 sausijsen<span class="text-success">- 2 varkensworsten</span></li>
+                            <li> Drije murghschinken (merg schenkels / mergpijpjes
+                        https://archive.org/stream/frieschelusthofb00star/frieschelusthofb00star_djvu.txt)<span class="text-success">- 3
+                        mergpijpjes</span></li>
+                            <li> Heele peper<span class="text-success">- zwarte peper, gekneusd</span></li>
+                            <li>Foelij <span class="text-success">- foelie</span></li>
+                            <li>Een stuck booter<span class="text-success"> - een klont boter</span></li>
+                            <li>Sommighe Cropsalade<span class="text-success"> - een kropsla</span></li>
+                            <li>Suuring<span class="text-success"> - een bosje zuring</span></li>
+                            <li>Prij<span class="text-success" - een prei></span></li>
+                            <li>Boompjens van artisjocken of blomcool<span class="text-success"> - 4 artisjokjes</span></li>
+                            <li>Drije dooijrren van Eijeren<span class="text-success"> - 3 eidooiers</span></li>
+                            <li>Een leepel 2 a 3 limoensap<span class="text-success"> - sap van een limoen</span></li>
+                            <li>Peterselij <span class="text-success">- bosjes platte peterselie</span></li>
+                            <li>harde dooijer van eijeren<span class="text-success"> - 3 hardgekookte eidooiers</span></li>
+                            <li>wittebrood<span class="text-success"> - wit brood</span></li>
+                        </ul>
+                        <p>Neempt een goed hoen, een vett ribbetje schaapenvleesch, het aghterste van een calfs-bout, 2 à 3
+                        calfsbousjens (???), een stuck of 2 rundtvleesch. Dit coockt men altesaamen in een pot, dat het
+                        nat wel craghtig is,</p>
+                        <p class="text-success">Doe de kip, het lamsvlees, de schenkels en de sukade in een grote pan. Zet het geheel op in koud
+                        water, breng aan de kook en schuim het vuil dat naar boven komt af. laat dit alles een uur op
+                        een laag pitje trekken, zodat je een krachtige bouillon krijgt.</p>
+                        <p>dan coockt men nogh in een ander pott besonder een varckens-crapje, een of twee varckens ooren
+                        en Voeten, drije murghschincken, en alwat bij het hoen in de eerste pott gecoockt is,</p>
+                        <p class="text-success"> Doe vervolgens in een andere pan de krabbetjes, de varkenspoot en de mergpijpjes en al het vlees
+                        uit de eerste pan en kook dit wederom op, terwijl je al het vuil dat naar boven komt telkens
+                        afschuimt.</p>
+                        <p>dan sett men het selfde sap, in een goede aandepott te coocken, liever te stooven, en daar doet
+                        men bij heele peper en foelij, en een stuck booter, men doet daar groente bij, na dat den tijd
+                        is(?), sommighe cropsalade, suuringh, prij, boompjes van artisjocken, of blomcool, het natt moet
+                        eens sieden (sieden = aan de kook raken (ziedend)), eermen de groente daarin doet, want se
+                        anders taaijword, dit moet wel anderhalf uur stooven,</p>
+                        <p class="text-success">Neem een beetje bouillon uit de pan en doe dit in een ander pannetje met een klont boter, hele
+                        peper en foelie. Stoof hierin de groeten gaar. Houdt er rekening mee dat sommige groentes langer
+                        nodig hebben dan andere.</p>
+                        <p>tegens dat men deese Schoottel opdischt, soo neemt men drije dooijren van Eijeren, in een potje
+                        sijn geclopt, met een leepel, 2 a 3 limoensap/citroensap (?), daar giet men het gestoofde natt
+                        op en roert het wel door een, tot dat de spijs is geschootelt,</p>
+                        <p class="text-success"> Voor de saus neem je 3 eidooiers, die je samen met het 2 a 3 eetlepels limoensap en wat
+                        bouillon, au bain marie, opklopt. door mde langzame verhitting, gaan de eidooiers binden en zul
+                        je een luchtige saus krijgen.</p>
+                        <p>dan leijt men daar ook bij het varckensvleesch, oock de sausijsen, en munghschincken, en dan
+                        alles in de schootel zijnde get men de saus daarop, dan heeft men pieterselij met harde dooijer
+                        van eijeren, door een geklopt, die strooit men daar op, en wil wel in een groote schootel zijn,
+                        de cant met gehackt witte broodt beleijt,</p>
+                        <p class="text-success">Vervolgens legt men het vlees en de groentes in een schotel en giet men de saus hierover.
+                        garneer met mimosa van eidooier, gehakte peterselie. bekleed de rand van het bord met wittebrood</p>
+                        <p> alsmen deese schootel met prij stooft, soo moet de peper gestooten sijn en men stooft daar wat
+                        gestooten beschuijt in, maar dan doet men geen eijeren of limoensap daar bij, maar alleen de
+                        saus die in de pott is, en geen pieterselij daarop</p>
+                        <p class="text-success">Als je het gerecht met prei maakt, gebruik je in plaats van eieren en limoensap gemalen beschuit
+                        om de saus te binden.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+
+        <footer class="blog-footer">
+            <p>This webpage is created with ❤ by <a href="https://www.instagram.com/robertkraamwinkel/"> Robert</a> and
+                <a href="https://www.instagram.com/saifslife/">Saif </a> </p>
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+</body>
+
+</html>
