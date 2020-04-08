@@ -135,8 +135,17 @@ header.masthead .site-heading .subheading {
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
-  
+
 }
+
+.subheading{
+  font-family: 'Montserrat', sans-serif
+  font-size: 15px;
+  font-weight: 300; 
+  display: block; 
+  font-style:italic;
+}
+
 
 
 
@@ -159,6 +168,14 @@ header.masthead .site-heading .subheading {
 
 .csScarlet{
   background-color:  #FF1900;
+}
+
+.category-title{
+  color:  #FF1900;
+}
+
+a{
+  color:  #FF1900;
 }
 
 .caption {
