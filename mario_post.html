@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Robert Kraamwinkel, Saif Abdoelrazak, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.6">
+  <link rel="icon" href="icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Change the title of the page! -->
+  <title>Food Review - the Italian sandwich war    </title>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/blog/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="blog.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Responsive nav bar (requires jquery and bootstrap js plugin) -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top " style="margin-bottom: 10px;">
+
+      <!-- Taste of time logo -->
+      <a href="index.html" class="navbar-brand"><img src="img/logo1.png" alt="logo1" width="100"></a>
+
+      <!-- responsive hamburger menu button  -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- this div determines which part of the nav bar gets replaced by the menu icon when min-width is reached -->
+      <div class="collapse navbar-collapse justify-content-end" id="collapse_target">
+        <!-- the actual list of nav-items -->
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="recipe-page.html" class="nav-link">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a href="lifestyle.html" class="nav-link">Lifestyle</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://utrechttimemachine.nl" class="nav-link">Utrecht Time Machine</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Insert Image here -->
+    <header class="masthead"
+      style="background-image: url('img/mario.JPG')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading text-white">
+              <h1>Food Review - the Italian sandwich war
+                Broodje Mario versus Broodje Carlo
+                </h1>
+              <p><span class="meta">Posted by
+                  <a href="about.html" style="color:#BEE3DB">Team Taste of Time</a>
+                  on April 9, 2020</span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>Two slices of salami, two slices of chorizo, some vegetable strips, cheese and a green pepper. It might not sound that controversial, but it has been the source of the ongoing competition between Broodje Mario and Broodje Carlo: two Italian sandwich shops, located right next to each other at the Janskerkhof. They sell the same standard Italian sandwich, use the same ingredients, charge the same price (€3,-) and enjoy the same popularity. The taste is very comparable. It got us thinking - what are the origins of this Italian ‘sandwich-war’ ?
+
+            </p>
+
+            <a href="#">
+              <img class="img-fluid"
+                src="img/mario.JPG"
+                alt="">
+            </a>
+            <!-- This is where you caption your images -->
+            <span class="caption text-muted">top: Broodje Mario <br> bottom: Broodje Carlo </span>
+
+            <p>It is important to note that not all Utrecht’s Italian sandwich shops are located at the Janskerkhof. At the Oudegracht, another stall with the name ‘Broodje Mario’ has dominated the area for years. Another Italian entrepreneur, Carlo Stamegna, tried his luck at the Janskerkhof by opening his sandwich shop Pizzaria della Casa - better known as ‘Broodje Carlo’ to the general public. But thriving business at the Janskerkhof did not go unnoticed, and Carlo would soon receive fierce competition from an experienced shop owner. After years of Carlo’s exclusive rights at the Janskerkhof, another sandwich shop opened up a few metres next to Broodje Carlo: straightforwardly called ‘Broodje Mario 2’. Carlo complained to the municipality that his neighbour did not respect the existing rules for kiosks at the square and accused Mario of other illegal activities. On the other hand, Ma- rio was unaware of any wrongdoing, and claimed that he was the rightful claimant of Italian sandwiches in Utrecht: “We have been located in Utrecht for more than thirty years. Eve- rybody knows us. We have popularized the Italian sandwiches in the Netherlands. Nobody else. The Netherlands has a free market. Period.” (2010) The yes/no debate between Carlo and Mario seems unsolvable and continues until this day. Only the future knows how this envious competition between two Italian sandwich shops at the Janskerkhof will eventually turn out. 
+
+            </p>
+            <h2 class ="section-heading"> References:</h2> 
+            <p>Een Utrechtse Italiaan : Mario Nistro. An interview from Erik Hardeman, property of Het Utrechts Archief (“63640 Een Utrechtse Italiaan : Mario Nistro; / interview Erik Hardeman. https://hetutrechtsarchief. nl/collectie/BE9BDA00731251458F778F5F6A32F2D6). </p>		
+            <p>‘Pizzastrijd in Utrecht’ https://napelszien.files.wordpress.com/2010/10/broodjemario3.jpg </p>
+            <p>“Stad en regio: Utrecht” Algemeen Dagblad, 01-06-2010. </p>
+
+  </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+
+    <footer class="blog-footer">
+      <p>This webpage is created with ❤ by <a href="https://www.instagram.com/robertkraamwinkel/"> Robert</a> and <a
+          href="https://www.instagram.com/saifslife/">Saif </a> </p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+</body>
+
+</html>
